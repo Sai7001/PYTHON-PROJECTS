@@ -1,4 +1,5 @@
 import random
+count = 1
 while True:
     choice = input("Roll the Dice?(y/n) :").lower()
     if choice == "y":
@@ -10,3 +11,5 @@ while True:
         exit()
     elif choice != "y" and choice != "n":
         print("Invalid Choice!!")
+    count += 1
+    print(count)
