@@ -1,15 +1,17 @@
 import random
-count = 1
+count = 0
 while True:
     choice = input("Roll the Dice?(y/n) :").lower()
     if choice == "y":
+        count += 1
         die1 = random.randint(1,6)
         die2=random.randint(1,6)
         print(f"({die1},{die2})")
+
     if choice == "n":
         print("thankyou for playing!!")
-        exit()
+        break
     elif choice != "y" and choice != "n":
         print("Invalid Choice!!")
-    count += 1
+
     print(count)
